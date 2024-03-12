@@ -1,4 +1,6 @@
 from pymongo import MongoClient
 
-db_connection = MongoClient()
+client = MongoClient('mongodb://localhost:27017/hospital')
+
+db_connection = client['hospital']
 

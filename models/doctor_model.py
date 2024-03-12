@@ -1,4 +1,3 @@
-
 def doctor_entity(item) -> dict:
     return {
         "id": str(item['_id']),
@@ -11,3 +10,4 @@ def doctor_entity(item) -> dict:
 
 def doctors_entity(entity) -> list:
     return [doctor_entity(item) for item in entity]
+
